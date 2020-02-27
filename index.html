@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>MyPeople App - Mini Project</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/css/reset_style.css">
+    <link rel="stylesheet" href="src/css/style.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+</head>
+<body>
+    <header class="showcase">
+        <div class="showcase-top">
+            <i class="fa logo">&#xf2b9;</i>
+            <h1>MyPeople</h1>
+        </div>
+    </header>
+    <main>
+        <div class="website-wrapper">            
+            <form action="" method="POST" name="contactForm">
+                <div class="rows">
+                    <label for="fname">First Name</label>
+                    <input type="text" name='fname' placeholder="First name">
+                </div>
+                <div class="rows">
+                    <label for="lname">Last Name</label>
+                    <input type="text" name='lname' placeholder="Last name">
+                </div>
+                <div class="rows">
+                    <label for="mphone">Mobile Phone</label>
+                    <input type="text" name='mphone' placeholder="XXX-XXX-XXXX">
+                </div>
+
+                <a class="show-more-btn">
+                    <span>Show more fields</span>
+                    <i class="material-icons">&#xe313;</i>
+                </a>
+
+                <div class="optional-fields-wrapper">
+                    <div class="rows">
+                        <label for="hphone">Home Phone</label>
+                        <input type="text" name='hphone' placeholder="XXX-XXX-XXXX">
+                    </div>
+                    <div class="rows">
+                        <label for="email">E-mail Address</label>
+                        <input type="text" name='email' placeholder="email@domain.com">
+                    </div>
+                    <div class="rows">
+                        <label for="address">Home Address</label>
+                        <input type="text" name='address' placeholder="St # - City - State - Zip Code">
+                    </div>
+                </div>
+
+                <div class="rows">
+                    <button class="btn btn-lg" type="submit">
+                        Add Contact 
+                        <i class="material-icons">&#xe7fe;</i>
+                    </button>
+                </div>
+            </form>
+            
+            <section class="existing-contacts">
+                <div class="existing-contacts-top">
+                    <h2>Your Contacts</h2>
+                    
+                    <div class="contact-filter-wrapper">                        
+                        <input type="text" name="filter-input" placeholder="Filter">
+                        <i class='fas'>&#xf002;</i>
+                    </div>
+                </div>
+                <div class="contacts-wrapper"></div>
+            </section>
+        </div>
+    </main>
+
+    <script src="src/js/main.js"></script>
+</body>
+</html>
